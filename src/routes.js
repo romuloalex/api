@@ -27,7 +27,7 @@ export const routes = [
     method: "DELETE",
     path: "/products/:id",
     controller: ({ request, response }) => {
-      return response.end("Produto removido com ID: " + request.params.id);
+      return response.end(request.params.id);
     },
   },
 ].map((route) => ({
